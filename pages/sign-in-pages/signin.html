@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../resources/css/signin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <section class="login-section">
+        <section class="image-section">
+            <img src="../resources/images/ma-wp.jpg" width="100%" height="850">
+        </section>
+        <div class="login-div">
+            <section class="signinsection sign-up-page show" id="signUpPage">
+            <form action="javascript:handleSignUp(firstName.value, lastName.value, signupEmail.value, password.value)">
+                <div id="personalInfo" class="container">
+                    <h1>Sign Up</h1>
+                    <hr>
+                    <label for="name"><b>First Name</b></label>
+                    <input type="text" placeholder="Enter First Name" id="firstName" name="firstName"> 
+                    <label for="name"><b>Last Name</b></label>
+                    <input type="text" placeholder="Enter Last Name" id="lastName" name="lastName"> 
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" id="signupEmail" name="email">
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" id="password" name="password">
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" id="pswRepeat" name="pswRepeat">
+                    <p class="privacy-p">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                    <label>
+                      <input class="remember-imput" type="checkbox" checked="checked" id="rememberMe" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+                    <div class="buttons">
+                        <button type="submit" class="signupbutton">Sign Up</button>
+                        <button type="button" class="signinpage" id="signinpage" onclick="switchSignInOption()">Login</button>
+                    </div>
+                </div>
+            </form>
+            </section>
+            <section class="signinsection log-in-page" id="logInPage">
+                <form action="javascript:handleSignIn()">
+                    <div class="imgcontainer">
+                        <img src="../resources/images/avatar2.png" alt="Avatar" class="avatar">
+                        </div>
+                        <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" id="loginEmail">
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw">
+                        <label>
+                            <input class="remember-imput" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">Remember me
+                        </label>
+                        <button type="submit">Login</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                        <div class="container">
+                        <button type="button" class="signupbutton sign-in-btn" onclick="switchSignInOption()">Sign Up</button>
+                        
+                    </div>
+                </form>
+            </section>
+        </div>
+    </section>
+    
+</body> 
+<script src="scripts/signinpages.js"></script>
+<script src="scripts/userdb.js"></script>
+<script src="scripts/user.js"></script>
+</html>

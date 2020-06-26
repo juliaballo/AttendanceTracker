@@ -37,6 +37,10 @@ body {
     display: none;
 }
 
+.sign-up-page.show {
+    display: inherit;
+}
+
 .container {
     padding: 45px;
     width: 90%;
@@ -107,10 +111,14 @@ button:hover {
 }
 
 
-/* SIGN IN PAGE*/
+/* LOG IN PAGE*/
 
-.sign-in-page {
-    /*display: none;*/
+.log-in-page {
+    display: none;
+}
+
+.log-in-page.show {
+    display: inherit;
 }
 
 button {
@@ -148,7 +156,7 @@ span.psw a {
 
 .signupbutton {
     padding: 14px 20px;
-    background-color: #747DBD;
+    background-color: #519F6A;
 }
 
 
