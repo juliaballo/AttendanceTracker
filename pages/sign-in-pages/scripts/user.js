@@ -8,6 +8,7 @@ const getCurrentUser = () => {
 const handleSignUp = (firstName, lastName, email, password) => {
     const newUser = new User(firstName, lastName, email, password);
     const userAdded = userDB.addUser(newUser); // userAdded is going to be a user object
+    //switch to login page
     const signUpPage = document.getElementById("signUpPage");
     const logInPage = document.getElementById("logInPage");
     if(!userAdded) {
@@ -21,11 +22,10 @@ const handleSignIn = () => {
     const email = document.getElementById("loginEmail").value; //.value is a method on imput fields => returns the value
     const password = document.getElementById("password").value;
     console.log("I'm here at handleSignIn: " + email);
-    console.dir(document.getElementById("loginEmail"));
     currentUser = userDB.logInUser(email, password);
 }
 
-class User {
+class User  {
     constructor(firstName, lastName, email, password, pswRepeat) {
         this.firstName = firstName,
         this.lastName = lastName,

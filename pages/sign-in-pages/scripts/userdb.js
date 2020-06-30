@@ -30,7 +30,7 @@ class Userdb {
         if(!currentUser) { //! => if this.findUser(email) === false
             console.log("There is no email address like this in our database, please sign up first");
         } else {
-            console.log("Email address is signed up, way to go! " + currentUser.firstName);
+            console.log("Email address is signed up, way to go " + currentUser.firstName + "!");
         }
     }
     description(reason) {
