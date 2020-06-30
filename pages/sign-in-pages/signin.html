@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../resources/css/signin.css">
+    <link rel="stylesheet" href="./css/signin.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <section class="login-section">
         <section class="image-section">
-            <img src="../resources/images/ma-wp.jpg" width="100%" height="850">
+            <img src="../../resources/images/ma-wp.jpg" width="100%" height="850">
         </section>
         <div class="login-div">
             <section class="signinsection sign-up-page show" id="signUpPage">
@@ -39,7 +39,7 @@
             <section class="signinsection log-in-page" id="logInPage">
                 <form action="javascript:handleSignIn()">
                     <div class="imgcontainer">
-                        <img src="../resources/images/avatar2.png" alt="Avatar" class="avatar">
+                        <img src="../../resources/images/avatar2.png" alt="Avatar" class="avatar">
                         </div>
                         <div class="container">
                         <label for="uname"><b>Username</b></label>
@@ -50,7 +50,7 @@
                         <label>
                             <input class="remember-imput" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">Remember me
                         </label>
-                        <button type="submit">Login</button>
+                        <button type="submit" onClick="location.href='../profile-page/profile.html'">Login</button>
                         <span class="psw">Forgot <a href="#">password?</a></span>
                         </div>
                         <div class="container">
@@ -66,4 +66,5 @@
 <script src="scripts/signinpages.js"></script>
 <script src="scripts/userdb.js"></script>
 <script src="scripts/user.js"></script>
+<script src="../profile-page/scripts/profilepage.js"></script>
 </html>
